@@ -111,7 +111,7 @@
 .header .login ul li{
 	width: 60px;
 }
-.appPic{
+.header .headerLi .appPic{
 	position: absolute;
 	width: 100px;
 	height: 110px;
@@ -120,13 +120,13 @@
 	margin-top: 30px;
 	display: none;
 }
-.appPic img{
+.header .headerLi .appPic img{
 	width: 80px;
 	height: 80px;
 	margin-left: 10px;
 	margin-top: 5px;
 }
-.appPic span{
+.header .headerLi .appPic span{
 	display: block;
 	width: 100%;
 	height: 14px;
@@ -134,6 +134,16 @@
 	font-size: 14px;
 	text-align: center;
 	/*margin-left: 10px;*/
+}
+.header .headerLi .appPic .appTodown{
+	position: absolute;
+	margin-left: 20px;
+	margin-top: -9px;
+    width: 0px;
+	height:0px;
+	border-width: 0px 10px 10px 10px;
+	border-style: solid;
+	border-color: white transparent;
 }
 
 
@@ -321,105 +331,92 @@
 }
 
 
-.footer{
+.videoCenter{
 	width: 100%;
-	min-height:100px;
-	margin-top: 40px; 
+	min-height: 300px;
 }
-.footer .learn{
+.videoCenter .videoPlay{
+	width: 1150px;
+	height: 570px;
 	margin: 0 auto;
-	width: 88%;
-	min-height: 100px;
+	margin-top: 15px;
+	/*border: 1px solid red;*/
 }
-.footer .learn .dHead{
-	margin: 0 auto;
-	width: 95%;
-	/*margin: 0 auto*/
-	height: 50px;
-	/*margin-left: 20px;*/
-} 
-.footer .learn .dHead .span1,.position .span1,.position1 .span1{
-	float: left;
-	font-size: 22px;
+.videoCenter .videoPlay .videoIntro{
+	width: 100%;
+	height: 100px;
+	/*margin-bottom: 20px;*/
+	/*border: 1px solid blue;*/
+}
+.videoCenter .videoPlay .videoIntro .span1{
 	color: #596267;
-}
-.footer .learn .dHead .span2{
-	/*display: block;*/
-	float: right;
-}
-.footer .learn .dHead .span2 a{
-	color: #C1C4C6;
-}
-.footer .learn .dHead a:hover{
-	color: #75D0F8;
-}
-.footer .learn .video{
-     margin-top: 20px;
-     width: 100%;
-     min-height: 170px;
-     margin-left: 20px;
-     /*margin: 0 auto;*/
-}
-.footer .learn .video .vFirst{
+	font-size: 22px;
+	line-height: 100px;
 	float: left;
-/*	margin-right: 20px;*/
-    width: 270px;
+}
+.videoCenter .videoPlay .videoIntro .span2{
+	float: right;
+	line-height: 100px;
+}
+.videoCenter .videoPlay .videoIntro .span2 a{
+    color: #CCC4C6;
+    cursor: pointer;
+    font-size: 16px;
+}
+.videoCenter .videoPlay .videoIntro .span2 a:hover{
+	color: #6ABDE1;
+}
+.videoCenter .videoPlay .videoCon{
+	float: left;
+	width: 270px;
+	height: 220px;
+}
+.videoCenter .videoPlay .videoCon .videoImg{
+    width: 100%;
+    height: 150px;
     overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-.marginLeft{
-	margin-left: 20px;
-}
-.marginTop{
-	margin-top: 50px;
-}
-.marginTop1{
-	margin-top: 200px;
-}
-.footer .learn .video .vFirst .dImg{
-	overflow: hidden;
+.videoCenter .videoPlay .videoCon .videoImg img{
 	width: 100%;
 	height: 150px;
-}
-.footer .learn .video .vFirst .dImg img{
-	height: 150px;
-	width: 100%;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
 	transition: all 0.6s;
 }
-.footer .learn .video .vFirst .dImg:hover img{
-	transform: scale(1.3);
+.videoCenter .videoPlay .videoCon .videoImg:hover img{
+	transform: scale(1.2);
 }
-.footer .learn .video .vFirst .vSpan1,.footer .learn .video .vFirst .vSpan2{
-    margin-top: 10px;
-    font-size: 14px;
-    color: #424D52;
+.videoCenter .videoPlay .videoCon .imgIntro{
+	width: 100%;
+	line-height: 40px;
+	font-size: 14px;
+	/*margin-bottom: 20px;*/
 }
-.footer .learn .video .vFirst .vSpan2{
+.videoCenter .videoPlay .videoCon .imgIntro .span1{
+	float: left;
+	color: #424D52;
+}
+.videoCenter .videoPlay .videoCon .imgIntro .span2{
 	float: right;
 	color: #FF8862;
 }
-.footer .learn .video .vFirst .vSpan1{
-	float: left;
-}
-
-.position{
-	position: absolute;
-	margin-top: 540px;
-}
-.position1{
-	position: absolute;
-	margin-top: 1150px;
-}
 
 
+
+.marginLR{
+	margin-left: 20px;
+}
+.clearFloat{
+	overflow: hidden;
+}
 
 .end{
 	border-top: 1px solid #A7E1FB;
-	position: absolute;
-	margin-top: 1500px;
+	/*position: absolute;
+	margin-top: 1500px;*/
 	width: 100%;
-	min-height: 100px;
+	height: 110px;
+	margin: 30px 0px;
 }
 .end .eSpan1,.end .eA{
 	margin-top: 30px;
